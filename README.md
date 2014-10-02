@@ -20,3 +20,7 @@ CODE
 Managana source code is split among its various modules. All the related repositories contain a FlashDevelop (www.flashdevelop.org) project ready to be build. Managana uses the Apache Flex SDK (flex.apache.org) instead of the Adobe one.
 
 To build any Managana project you'll need to add the Ciclope AS3 classes (https://github.com/lujunq/ciclopeas3) to your classpath. You'll also need the old, but still very good Caurina tweener classes - the "as3" version (https://code.google.com/p/tweener/). Tweener is licensed under the "MIT License".
+
+AS3 CLASSES: https://github.com/lujunq/ciclopeas3
+WEB PLAYER: https://github.com/lujunq/managanawebplayer
+APP PLAYER: https://github.com/lujunq/managanaappplayer

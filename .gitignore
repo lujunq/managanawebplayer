@@ -1,9 +1,12 @@
-# build and release files
+# build and release files and folders
 *.apk
 *.ipa
+dist/
 
-# temporary files
+# temporary and note files
 *.tmp
+notes/
+
 
 # certificates
 *.p12
