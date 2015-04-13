@@ -45,7 +45,7 @@ package {
 		
 		// CONSTANTS
 		
-		private const MANAGANAVERSION:String = "1.6.0";								// current Managana version
+		private const MANAGANAVERSION:String = "1.7.0 (beta 08/04/15 14:00)";		// current Managana version
 		private const READERKEY:String = "managana";								// access key for managana reader server
 		private const READERMETHOD:String = "post";									// reader server access method
 		private const READERENDING:String = ".php";									// reader server script ending
