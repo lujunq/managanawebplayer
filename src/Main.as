@@ -45,7 +45,7 @@ package {
 		
 		// CONSTANTS
 		
-		private const MANAGANAVERSION:String = "1.7.0 (beta 08/04/15 14:00)";		// current Managana version
+		private const MANAGANAVERSION:String = "1.7.0 (beta 24/04/15a)";			// current Managana version
 		private const READERKEY:String = "managana";								// access key for managana reader server
 		private const READERMETHOD:String = "post";									// reader server access method
 		private const READERENDING:String = ".php";									// reader server script ending
@@ -112,7 +112,7 @@ package {
 			var managanaSite:ContextMenuItem = new ContextMenuItem("visit www.managana.org");
 			managanaSite.addEventListener(ContextMenuEvent.MENU_ITEM_SELECT, onManaganaSite);
 			this._menu.customItems.push(managanaAbout, managanaSite);
-			this.contextMenu = this._menu;			
+			this.contextMenu = this._menu;
 		}
 		
 		/**
@@ -347,7 +347,7 @@ package {
 		private function managanaDrag():void {
 			Main.dragging = true;
 			this._managana.mouseChildren = false;
-			this._managana.startDrag();
+			if (this._managana.userDrag) this._managana.startDrag();
 		}
 		
 		/**
@@ -359,7 +359,7 @@ package {
 					clearTimeout(Main.drinterval);
 				}
 				Main.dragging = false;
-				this._managana.stopDrag();
+				if (this._managana.userDrag) this._managana.stopDrag();
 				this._managana.mouseChildren = true;
 			}
 		}
